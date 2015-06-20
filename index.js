@@ -15,7 +15,7 @@ module.exports = function(t) {
 		}
 		var out = head;
 		for (var i = 0; i < pieces.length; i++) {
-			out += (i % 2 == 0) ? o[pieces[i]] : pieces[i];
+			out += (i % 2 == 0) ? o[pieces[i]] || '' : pieces[i];
 		}
 		return out;
 	}

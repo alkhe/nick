@@ -14,7 +14,7 @@ module.exports = function(t) {
 			o = {};
 		}
 		return pieces.reduce(function(prev, cur, i) {
-			return prev + ((i % 2 == 0) ? o[cur] : cur);
+			return prev + ((i % 2 == 0) ? o[cur] || '' : cur);
 		}, head);
 	}
 };

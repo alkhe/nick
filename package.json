@@ -1,6 +1,6 @@
 {
   "name": "nick",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The smallest templating engine ever.",
   "main": "index.js",
   "scripts": {
