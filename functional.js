@@ -1,4 +1,4 @@
-var Nick = module.exports = function(t) {
+module.exports = function(t) {
 	var pieces = t.split(/[\{\}]/),
 		head = t.charAt(0) == '{' ? '' : pieces.splice(0, 1);
 	return function(o) {
