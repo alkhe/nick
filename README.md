@@ -3,7 +3,7 @@
 
 `nick` is a no-nonsense string templating engine written in 11 lines.
 
-A browser build is available at [to be added](#). It is available globally as `Nick`.
+A browser build is available [here](https://raw.githubusercontent.com/edge/nick/master/lib/nick.js). It is available globally as `Nick`.
 
 ## Installation
 
