@@ -1,0 +1,21 @@
+{
+  "name": "nick",
+  "version": "0.0.1",
+  "description": "The smallest templating engine ever.",
+  "main": "index.js",
+  "scripts": {
+    "test": ":"
+  },
+  "keywords": [
+    "template",
+    "brace",
+    "enclosed",
+    "templating",
+    "engine"
+  ],
+  "author": "synchronous",
+  "license": "MIT",
+  "devDependencies": {
+    "benchmark": "^1.0.0"
+  }
+}

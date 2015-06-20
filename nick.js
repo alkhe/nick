@@ -1,0 +1,1 @@
+module.exports=function(a){var b=a.split(/[\{\}]/),c="{"==a.charAt(0)?"":b.splice(0,1);return function(a){for(var d=c,e=0;e<b.length;e++)d+=e%2==0?a[b[e].trim()]:b[e];return d}};
