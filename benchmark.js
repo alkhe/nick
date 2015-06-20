@@ -18,6 +18,6 @@ suite.add('iterative', function() {
 	console.log('Fastest is ' + this.filter('fastest').pluck('name'));
 }).run({ 'async': true });
 
-// iterative x 1,056,798 ops/sec ±1.29% (98 runs sampled)
-// functional x 709,327 ops/sec ±1.41% (92 runs sampled)
+// iterative x 5,592,182 ops/sec ±1.41% (95 runs sampled)
+// functional x 1,967,129 ops/sec ±2.10% (92 runs sampled)
 // Fastest is iterative

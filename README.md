@@ -1,7 +1,7 @@
 # nick
 ## The smallest templating engine ever.
 
-`nick` is a no-nonsense string templating engine written in 11 lines.
+`nick` is a no-nonsense string templating engine written in 11 lines (plus 11 lines of optimization).
 
 A browser build is available [here](https://raw.githubusercontent.com/edge/nick/master/lib/nick.js). It is available globally as `Nick`.
 
