@@ -1,19 +1,30 @@
 # nick
 ## The smallest templating engine ever.
 
-`nick` is a no-nonsense string templating engine written in 10 lines (plus 3 lines of optimization).
+`nick` is a no-nonsense string templating engine written in 10 lines (plus 8 lines of optimization).
 
 A browser build is available [here](https://raw.githubusercontent.com/edge/nick/master/lib/nick.js). It is available globally as `Nick`.
 
+* [Installation](#installation)
+* [Usage](#usage)
+	* [API](#api)
+	* [Basic](#basic)
+	* [Custom Delimiters](#custom-delimiters)
+* [Benchmarks](#benchmarks)
+
 ## Installation
 
-`$ npm i nick`
+```
+$ npm i nick
+```
 
 ## Usage
 
 ### API
 
-`nick(templateString, [delimiterRegex])`
+```
+nick(templateString, [delimiterRegex])
+```
 
 ### Basic
 
@@ -49,6 +60,8 @@ var result = thing({ adjective: 'random' });
 ```
 
 ## Benchmarks
+
+The benchmarks were written with templates in the recommended style of their respective engines, profiling the performance of the example provided in [Basic](#basic).
 
 ```
 nick x 13,253,638 ops/sec ±0.88% (96 runs sampled)
