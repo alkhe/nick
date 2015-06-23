@@ -7,7 +7,7 @@ module.exports = function(t, delimiter) {
 	var fn = 'o=o||{};return \'' + head + '\'';
 	for (var i = 0; i < pieces.length; i++) {
 		var piece = pieces[i];
-		fn += '+' + ((i % 2) ? '\'' + piece + '\'' : '(o[\'' + piece.trim() + '\']||\'\')');
+		fn += '+' + ((i % 2) ? '\'' + piece + '\'' : '(o.' + piece.trim() + '||\'\')');
 	}
 	return new Function('o', fn);
 };
