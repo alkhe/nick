@@ -4,19 +4,10 @@ module.exports = function(t, delimiter) {
 	if (pieces[pieces.length - 1] == '') {
 		pieces.pop();
 	}
+	var fn = 'o=o||{};return \'' + head + '\'';
 	for (var i = 0; i < pieces.length; i++) {
-		if (i % 2 == 0) {
-			pieces[i] = pieces[i].trim();
-		}
+		var piece = pieces[i];
+		fn += '+' + ((i % 2) ? '\'' + piece + '\'' : '(o[\'' + piece.trim() + '\']||\'\')');
 	}
-	return function(o) {
-		if (!o) {
-			o = {};
-		}
-		var out = head;
-		for (var i = 0; i < pieces.length; i++) {
-			out += (i % 2 == 0) ? o[pieces[i]] || '' : pieces[i];
-		}
-		return out;
-	}
+	return new Function('o', fn);
 };

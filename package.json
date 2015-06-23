@@ -1,6 +1,6 @@
 {
   "name": "nick",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "The smallest templating engine ever.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,10 @@
   "author": "synchronous",
   "license": "MIT",
   "devDependencies": {
-    "benchmark": "^1.0.0"
+    "benchmark": "^1.0.0",
+    "dot": "^1.0.3",
+    "handlebars": "^3.0.3",
+    "lodash": "^3.9.3"
   },
   "dependencies": {
     "benchmark": "^1.0.0"
