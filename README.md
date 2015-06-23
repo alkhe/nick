@@ -11,6 +11,14 @@ A browser build is available [here](https://raw.githubusercontent.com/edge/nick/
 
 ## Usage
 
+### API
+
+`nick(templateString, [delimiterRegex])`
+
+### Basic
+
+Anything inside a pair of delimiters will be a simple object access.
+
 ```js
 var nick = require('nick');
 
@@ -26,4 +34,16 @@ var me = resume({
 });
 
 // My name is Haskell Curry, and I am a logician working at λ Combinator. I have 100 years of experience in the field of combinatory logic.
+```
+
+### Custom Delimiters
+
+`nick` also takes a regular expression as an optional second argument, which defines what delimiter is used for the template.
+
+```js
+var thing = nick('I like to do {{{{{adjective}}}}} things.', /[\{\}]{5}/);
+
+var result = thing({ adjective: 'random' });
+
+// I like to do random things.
 ```
