@@ -4,7 +4,7 @@
   "description": "The smallest templating engine ever.",
   "main": "index.js",
   "scripts": {
-    "test": ":"
+    "test": "node benchmark.js"
   },
   "keywords": [
     "template",
@@ -17,5 +17,16 @@
   "license": "MIT",
   "devDependencies": {
     "benchmark": "^1.0.0"
-  }
+  },
+  "dependencies": {
+    "benchmark": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edge/nick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edge/nick/issues"
+  },
+  "homepage": "https://github.com/edge/nick#readme"
 }

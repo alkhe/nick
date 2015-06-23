@@ -1,5 +1,5 @@
-module.exports = function(t) {
-	var pieces = t.split(/[\{\}]/),
+module.exports = function(t, delimiter) {
+	var pieces = t.split(delimiter || /[\{\}]/),
 		head = pieces.shift();
 	if (pieces[pieces.length - 1] == '') {
 		pieces.pop();

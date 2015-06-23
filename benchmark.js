@@ -1,5 +1,5 @@
 var suite = new (require('benchmark').Suite),
-	iter = require('.'),
+	iter = require('./index'),
 	fn = require('./functional');
 
 var itert = iter('Hello, my name is { name } and I am { age } years old.'),
@@ -16,8 +16,8 @@ suite.add('iterative', function() {
 	console.log(String(event.target));
 }).on('complete', function() {
 	console.log('Fastest is ' + this.filter('fastest').pluck('name'));
-}).run({ 'async': true });
+}).run({ async: true });
 
-// iterative x 5,592,182 ops/sec ±1.41% (95 runs sampled)
-// functional x 1,967,129 ops/sec ±2.10% (92 runs sampled)
+// iterative x 7,973,495 ops/sec ±0.56% (98 runs sampled)
+// functional x 2,601,492 ops/sec ±0.76% (99 runs sampled)
 // Fastest is iterative

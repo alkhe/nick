@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'version',
+1 verbose cli   'patch' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.5
+4 verbose node symlink /usr/local/bin/node
+5 info preversion nick@0.0.7
+6 info git [ 'status', '--porcelain' ]
+7 verbose stack Error: Error: Git working directory not clean.
+7 verbose stack M benchmark.js
+7 verbose stack M example.js
+7 verbose stack M functional.js
+7 verbose stack M index.js
+7 verbose stack M package.json
+7 verbose stack     at /usr/local/lib/node_modules/npm/lib/version.js:71:23
+7 verbose stack     at /usr/local/lib/node_modules/npm/lib/version.js:151:34
+7 verbose stack     at ChildProcess.exithandler (child_process.js:742:7)
+7 verbose stack     at ChildProcess.emit (events.js:110:17)
+7 verbose stack     at maybeClose (child_process.js:1015:16)
+7 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+8 verbose cwd /home/chronize/Documents/projects/nick
+9 error Linux 4.0.5-1-ARCH
+10 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "version" "patch"
+11 error node v0.12.5
+12 error npm  v2.11.2
+13 error Error: Git working directory not clean.
+13 error M benchmark.js
+13 error M example.js
+13 error M functional.js
+13 error M index.js
+13 error M package.json
+14 error If you need help, you may report this error at:
+14 error     <https://github.com/npm/npm/issues>
+15 verbose exit [ 1, true ]
