@@ -19,7 +19,7 @@ var data = {
 
 console.assert(_.uniq([nickt, _t, doTt, hbst].map(function(fn) {
 	return fn(data);
-})).length == 1);
+})).length === 1);
 
 suite.add('nick', function() {
 	nickt(data);

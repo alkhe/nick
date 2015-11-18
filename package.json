@@ -4,7 +4,7 @@
   "description": "The smallest templating engine ever.",
   "main": "index.js",
   "scripts": {
-    "test": "node benchmark.js"
+    "test": "node benchmark"
   },
   "keywords": [
     "template",
@@ -18,11 +18,8 @@
   "devDependencies": {
     "benchmark": "^1.0.0",
     "dot": "^1.0.3",
-    "handlebars": "^3.0.3",
-    "lodash": "^3.9.3"
-  },
-  "dependencies": {
-    "benchmark": "^1.0.0"
+    "handlebars": "^4.0.4",
+    "lodash": "^3.10.1"
   },
   "repository": {
     "type": "git",
