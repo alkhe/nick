@@ -9,9 +9,12 @@ module.exports = function(t, delimiter) {
 	if (pieces[pieces.length - 1] === '') {
 		pieces.pop();
 	}
-	var fn = 'o=o||{};return ' + (parity ? '(o.' + head.trim() + '||\'\')' : '\'' + head + '\'');
+	var p1 = '(o.',
+		p2 = '||\'\')',
+		qt = '\'';
+	var fn = 'o=o||{};return ' + (parity ? p1 + head.trim() + p2 : qt + head + qt);
 	for (var i = 0; i < pieces.length; i++) {
-		fn += '+' + ((i % 2 == parity) ? '(o.' + pieces[i].trim() + '||\'\')' : '\'' + pieces[i] + '\'');
+		fn += '+' + ((i % 2 == parity) ? p1 + pieces[i].trim() + p2 : qt + pieces[i] + qt);
 	}
 	return new Function('o', fn);
 };
